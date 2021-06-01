@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* UTILITY */
+body {
+    min-height: 100vh;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header */
+.nav {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid grey;
+}
+.nav ul {
+    text-align: right;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.nav li {
+    margin: 0 10px;
+}
+
+.btn-create {
+    padding: 5px 8px;
+    color: white;
+    border-radius: 5px;
+    background-color: black;
+}
+
+/* Main */
+main {
+    max-height: calc(100vh - 50px - 100px);
+    overflow-y: auto;
+}
+
+.title {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.section-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid grey;
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    padding: 3px;
+}
+.box .title-post {
+    text-align: center;
+    min-height: 100px;
+    word-wrap: break-word;
+}
+.box .text-post {
+    word-wrap: break-word;
+    height: 300px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+.box .info-post {
+    margin: 10px 0;
+}
+
+.box .mod-post {
+    display: flex;
+    justify-content: space-around;
+}
+.box .mod-post .dettagli {
+    background-color: yellow;
+}
+.box .mod-post .modifica {
+    background-color: rgb(112, 240, 112);
+
+}
+.box .mod-post .cancella {
+    background-color: red;
+}
+
+.box .mod-post .mod {
+    padding: 2px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: grey;
+}
+
+.nav_fot {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.nav_fot li {
+    margin: 0 10px;
+}
+
+
+/* CRUD - Show */
+.show-post {
+    margin: 20px 0;
+}
+.show-post p {
+    font-size: 20px;
+}
+
+
+/* CRUD - Create */
+.form-group {
+    margin: 20px 0;
+}
+
+.form-control {
+    width: 100%;
+    height: 30px;
+}
